@@ -9,8 +9,7 @@ const { dbConnect } = require('./utiles/db');
 
 app.use(
   cors({
-    // origin: 'https://easy-shop-fe-ixtv.vercel.app',
-    origin:'https://easy-shop-fe.onrender.com',
+    origin: 'https://easy-shop-fe-ixtv.vercel.app',
     credentials: true,
   })
 );
