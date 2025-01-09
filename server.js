@@ -10,6 +10,8 @@ const { dbConnect } = require('./utiles/db');
 app.use(
   cors({
     origin: 'https://easy-shop-fe-ixtv.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Ensure all needed methods are allowed
+    allowedHeaders: ['Content-Type', 'Authorization'], // Ensure these headers are allowed
     credentials: true, // Ensure credentials are allowed
   })
 );
