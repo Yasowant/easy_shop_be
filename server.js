@@ -9,7 +9,7 @@ const { dbConnect } = require('./utiles/db');
 
 app.use(
   cors({
-    origin: 'https://easy-shop-fe-ixtv.vercel.app',
+    origin: 'http://localhost:3000',
     credentials: true,
   })
 );
